@@ -8,16 +8,16 @@ before_install:
 scripts:
  - docker run jumaandrew/docker-react2 npm run test -- --coverage
 
-deploy:
-  provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "Docker-react2"
-  env: "Dockerreact2-env"
-  bucket_name: "elasticbeanstalk-us-east-2-807100039696"
-  bucket_path: "docker-react2"
-  on:
-    branch: master
-  access_key_id: $AWS_KEY
-  secret_access_key:
-    secure: "$AWS_SECRET"
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-east-2"
+#   app: "Docker-react2"
+#   env: "Dockerreact2-env"
+#   bucket_name: "elasticbeanstalk-us-east-2-807100039696"
+#   bucket_path: "docker-react2"
+#   on:
+#     branch: master
+#   access_key_id: $AWS_KEY
+#   secret_access_key:
+#     secure: "$AWS_SECRET"
 
